@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Student Registration Form</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+
+    <body>
+
+        <div class="container">
+
+            <h1>Student Registration Form</h1>
+
+            <form action="index.html" method="GET">
+
+                <label>Full Name</label>
+                <input type="text" name="fullname" placeholder="Enter your full name" required>
+
+                <label>Email</label>
+                <input type="email" name="email" placeholder="Enter your email" required>
+
+                <label>Age</label>
+                <input type="number" name="age" min="18" max="60">
+
+                <label>Course</label>
+                <select name="course">
+                    <option>Cyber Security</option>
+                    <option>BCA</option>
+                    <option>B.Tech</option>
+                    <option>B.Sc</option>
+                </select>
+
+                <fieldset>
+
+                    <legend>Gender</legend>
+
+                    <div class="radio-group">
+
+                        <label>
+                            <input type="radio" name="gender" value="Male">
+                            Male
+                        </label>
+
+                        <label>
+                            <input type="radio" name="gender" value="Female">
+                            Female
+                        </label>
+
+                        <label>
+                            <input type="radio" name="gender" value="Other">
+                            Other
+                        </label>
+
+                        </div>
+
+                </fieldset>
+
+                <fieldset>
+
+                    <legend>Skills</legend>
+
+                    <div class="checkbox-group">
+
+                        <label>
+                            <input type="checkbox" name="python">
+                            Python
+                        </label>
+
+                        <label>
+                            <input type="checkbox" name="html">
+                            HTML
+                        </label>
+
+                        <label>
+                            <input type="checkbox" name="php">
+                            PHP
+                        </label>
+
+                    </div>
+
+                </fieldset>
+
+                <button type="submit">Register</button>
+
+            </form>
+
+        </div>
+
+    </body>
+</html>
